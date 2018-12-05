@@ -1,10 +1,11 @@
 import React, { Component } from 'react'
-// import './Style/dashboard.css'
+import './Style/dashboard.css'
 
 
 export default class Navbar extends Component {
     render() {
         return (
+            <div className="DashBoard">
             <div class="container main-content">
                 <div class="row">
                     <div class="col-4">
@@ -26,6 +27,7 @@ export default class Navbar extends Component {
                         </div>
                     </div>
                 </div>
+            </div>
             </div>
         )
     }
