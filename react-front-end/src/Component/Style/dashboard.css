@@ -1,50 +1,50 @@
-.container-fluid {
+.DashBoard .container-fluid {
     font-family:'montserrat';
     max-width: 1300px;
 }
 
-.avatar img {
+.DashBoard .avatar img {
     border-radius: 50%;
     max-width: 30px;
     margin-bottom: 10px;
 }
 
-.nav-change a{
+.DashBoard .nav-change a{
     padding-top: 11.5px;
 }
 
-.nav-item {
+.DashBoard .nav-item {
     margin-right: 18px;
     font-size: 15px;
 }
 
-.navbar-brand {
+.DashBoard .navbar-brand {
     font-weight: bold;
 }
 
-header .quote {
+.DashBoard header .quote {
     max-width: 600px;
     border-bottom: 1.5px solid #f55c3d;
     padding-bottom: 50px;
     font-family: Arial, Helvetica, sans-serif;
 }
 
-header {
+.DashBoard header {
     margin-bottom: 10vh;
     margin-top: 0px;
 }
 
-header .quote p {
+.DashBoard header .quote p {
     font-size: 0.95rem;
     
 }
 
-header .quote h4 {
+.DashBoard header .quote h4 {
     font-size: 1.6rem;
     
 }
 
-.selection-1 {
+.DashBoard .selection-1 {
     background-image: url('../../Image/blur-business-close-up-709840.jpg');   
     height: 60vh;
     width: auto;
@@ -52,21 +52,21 @@ header .quote h4 {
     
 }
 
-.selection-2 {
+.DashBoard .selection-2 {
     background-image: url('../../Image/black-pepper-bright-colors-940302.jpg');   
     height: 60vh;
     width: auto;
     background-size: cover;
 }
 
-.selection-3 {
+.DashBoard .selection-3 {
     background-image: url('../../Image/basil-delicious-food-459469.jpg');   
     height: 60vh;
     width: auto;
     background-size: cover;
 }
 
-.gradient-selection{
+.DashBoard .gradient-selection{
     content: '';
 	position: absolute;
 	top: 0;
@@ -77,7 +77,7 @@ header .quote h4 {
 	opacity: .3; 
 }
 
-.button {
+.DashBoard .button {
     font-size: 18px;
     padding: 8px;
     color: #ff6749;
@@ -92,13 +92,13 @@ header .quote h4 {
     border: 1.5px solid #f34f2e;
 }
 
-.button:hover {
+.DashBoard .button:hover {
     background: #ff6749;
     color: white;
 
 }
 
-.main-content {
+.DashBoard .main-content {
     text-align: center;
 }
 

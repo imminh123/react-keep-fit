@@ -5,9 +5,9 @@ import './Style/dashboard.css'
 export default class Navbar extends Component {
     render() {
         return (
-            <div>
+            <div className="quote">
                 <header>
-                    <div class="quote text-center mx-auto mt-2">
+                    <div className="quote text-center mx-auto mt-2">
                         <h4>Premium</h4>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce blandit,
                             neque eget dapibus hendrerit, risus urna porta tortor, pulvinar tincidunt

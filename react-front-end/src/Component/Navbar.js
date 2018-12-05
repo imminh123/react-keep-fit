@@ -5,6 +5,7 @@ import "./Style/homescreen.css"
 export default class Navbar extends Component {
     render() {
         return (
+            <div className="HomeScreen">
             <div className="header container-fluid">
                 <div className="gradient" ></div>
                 <ul className="nav justify-content-end">
@@ -76,6 +77,7 @@ export default class Navbar extends Component {
 
                     </div>
                 </div>
+            </div>
             </div>
         )
     }

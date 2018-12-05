@@ -23,7 +23,7 @@ export default class BodyHome extends Component {
 
     render() {
         return (
-            <div>
+            <div className="HomeScreen">
                 <div className="body container-fluid">
                     <div className="row intro-container" ref='foo1'>
                         <div className="col-6 image-intro">
