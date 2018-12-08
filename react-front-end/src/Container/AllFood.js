@@ -4,6 +4,7 @@ import Quote from '../Component/Quote'
 import Footer from '../Component/Footer'
 import Selection from '../Component/Selection'
 import AllFoolHeader from '../Component/AllFoolHeader';
+import AllFoodContent from '../Component/AllFoodContent';
 
 export default class Login extends Component {
     render() {
@@ -11,7 +12,7 @@ export default class Login extends Component {
             <div>
                 <MainNavbar />
                 <AllFoolHeader />
-    
+                <AllFoodContent />
                 <Footer />
             </div>
         )

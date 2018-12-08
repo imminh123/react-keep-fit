@@ -22,6 +22,7 @@ class App extends Component {
 
       <div className="App">
         {/* <AllFood /> */}
+
         {this.state.username ? <Dashboard /> : <Login changeState={this._changeState} />}
 
 
