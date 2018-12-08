@@ -21,8 +21,8 @@ class App extends Component {
     return (
 
       <div className="App">
-        <AllFood />
-        {/* {this.state.username ? <Dashboard /> : <Login changeState={this._changeState} />} */}
+        {/* <AllFood /> */}
+        {this.state.username ? <Dashboard /> : <Login changeState={this._changeState} />}
 
 
         {/* <BrowserRouter>
