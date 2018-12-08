@@ -70,13 +70,13 @@
     right: 0;
     background: rgba(0, 0, 0, 0.7);
     transition: opacity 500ms;
-    visibility: hidden;
-    opacity: 0;
-}
-.HomeScreen .overlay:target {
     visibility: visible;
     opacity: 1;
+    z-index: 1;
 }
+/* .HomeScreen .overlay:target {
+    
+} */
 
 .HomeScreen .popup {
     margin: 0 auto;
@@ -217,4 +217,8 @@
     background-image: linear-gradient(to bottom right,#002f4b,#dc4225);
     opacity: .9;
     padding-bottom: 60px;
+}
+
+.hidden{
+    display: none;
 }

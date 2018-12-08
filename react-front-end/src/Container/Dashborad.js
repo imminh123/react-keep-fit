@@ -1,14 +1,16 @@
 import React, { Component } from 'react'
-import Navbar from '../Component/Navbar'
-import BodyHome from '../Component/BodyHome'
+import MainNavbar from '../Component/MainNavbar'
+import Quote from '../Component/Quote'
 import Footer from '../Component/Footer'
+import Selection from '../Component/Selection'
 
 export default class Login extends Component {
     render() {
         return (
             <div>
-                <Navbar changeState={this.props.changeState} />
-                <BodyHome />
+                <MainNavbar />
+                <Quote />
+                <Selection />
                 <Footer />
             </div>
         )
