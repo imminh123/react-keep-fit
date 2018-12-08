@@ -1,0 +1,19 @@
+.UserInfo .avatar{
+    display: flex;
+    justify-content: center;
+}
+
+.UserInfo img{
+    border-radius: 20px;
+}
+
+.UserInfo .information{
+    padding-top: 2%;
+    white-space: nowrap; 
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.UserInfo .list-group-item{
+    display: flex;
+}
