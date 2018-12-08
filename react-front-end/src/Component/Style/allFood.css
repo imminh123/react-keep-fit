@@ -1,0 +1,13 @@
+.AllFood .cover {
+    background-image: url('../../Image/aroma-chili-condiments-357743.jpg');
+    background-size: cover;
+    height:50vh;
+    object-fit: cover;
+}
+
+.AllFood .cover p {
+    font-size: 5.8rem;
+    font-family: 'Mogra', cursive;
+    color: white;
+    padding-top: 15px;
+}
