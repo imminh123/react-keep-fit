@@ -7,7 +7,7 @@ export default class Navbar extends Component {
         return (
             <div className="DashBoard">
             <div className="container main-content">
-                <div classNameclass="row">
+                <div className="row">
                     <div className="col-4">
                         <div className="col-12 selection-1">
                             <div className="gradient-selection"></div>
