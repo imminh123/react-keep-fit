@@ -11,3 +11,13 @@
     color: white;
     padding-top: 15px;
 }
+
+.AllFood h5 {
+    font-family: 'montserrat';
+    font-size: 18px;
+}
+
+.AllFood .row{
+    font-family: 'montserrat';
+    font-size: 12px;
+}
