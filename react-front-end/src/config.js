@@ -1,3 +1,3 @@
 export default {
-    rootPath: "http://localhost:8888"
+    rootPath: "https://chi-hoa-fitness-backend.herokuapp.com"
 };

@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import axios from '../axios';
+import  config from '../config'
 
 class UserDetails extends Component {
 
@@ -66,7 +67,7 @@ class UserDetails extends Component {
   saveInfoDetails = () => {
     console.log(this.state, this.state.user._id);
     axios
-      .put("http://localhost:8888/api/user/" + this.state.user._id, {
+      .put(`${config.rootPath}/api/user/` + this.state.user._id, {
         id: this.state.user._id,
         name: this.state.user.name,
         weight: this.state.user.weight,

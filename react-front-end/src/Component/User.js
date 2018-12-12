@@ -3,6 +3,7 @@ import UserInfo from './UserInfo';
 import InfoDetails from './InfoDetails';
 import axios from '../axios';
 import './Style/User.css'
+import config from '../config'
 
 class User extends Component {
     state = {
@@ -11,7 +12,7 @@ class User extends Component {
 
     componentDidMount() {
         axios
-            .get("http://localhost:8888/api/user/5c0be63e00db3f13d031725f")
+            .get(`${config.rootPath}/api/user/5c0be63e00db3f13d031725f`)
             .then(response => {
                     const user = response.data.user
                     this.setState({

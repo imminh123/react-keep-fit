@@ -25,7 +25,7 @@ export default class MainNavbar extends Component {
                                     <a className="nav-link" href="#">Foods</a>
                                 </li>
                                 <li className="nav-item nav-change">
-                                    <a claclassNamess="nav-link" href="#">Contact</a>
+                                    <a className="nav-link" href="#">Contact</a>
                                 </li>
                                 <li className="nav-item nav-change">
                                     <a className="nav-link" href="#">About</a>
