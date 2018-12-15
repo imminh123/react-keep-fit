@@ -106,13 +106,13 @@ class UserDetails extends Component {
                   <div className="form-group row">
                     <label for="staticEmail" className="col-sm-2 col-form-label">Weight</label>
                     <div className="col-sm-10">
-                      <input type="number" name="weight" className="form-control" placeholder="Weight" value={this.state.user.weight} onChange={this._handleTextChange}/>
+                      <input type="number" name="weight" className="form-control" placeholder="Weight" value={this.state.user && this.state.user.weight ? this.state.user.weight : "Unknown"} onChange={this._handleTextChange}/>
                     </div>
                   </div>
                   <div className="form-group row">
                     <label className="col-sm-2 col-form-label">Height</label>
                     <div className="col-sm-10">
-                      <input type="number" name="height" className="form-control" placeholder="Height" value={this.state.user.height} onChange={this._handleTextChange} />
+                      <input type="number" name="height" className="form-control" placeholder="Height" value={this.state.user && this.state.user.height ? this.state.user.height : "Unknown"} onChange={this._handleTextChange} />
                     </div>
                   </div>
                 </form>
@@ -123,25 +123,25 @@ class UserDetails extends Component {
                   <div className="form-group row">
                     <label className="col-sm-2 col-form-label">Tổng kcal</label>
                     <div className="col-sm-10">
-                      <input type="number" name="kcal" className="form-control" placeholder="Kcal" value={this.state.user.macro ? this.state.user.macro.kcal : "Unknown"} onChange={this._handleMacroChange} />
+                      <input type="number" name="kcal" className="form-control" placeholder="Kcal" value={this.state.user && this.state.user.macro ? this.state.user.macro.kcal : "Unknown"} onChange={this._handleMacroChange} />
                     </div>
                   </div>
                   <div className="form-group row">
                     <label for="staticEmail" className="col-sm-2 col-form-label">Protein</label>
                     <div className="col-sm-10">
-                      <input type="number" name="protein" className="form-control" placeholder="Weight" value={this.state.user.macro ? this.state.user.macro.protein : "Unknown"} onChange={this._handleMacroChange} />
+                      <input type="number" name="protein" className="form-control" placeholder="Weight" value={this.state.user && this.state.user.macro ? this.state.user.macro.protein : "Unknown"} onChange={this._handleMacroChange} />
                     </div>
                   </div>
                   <div className="form-group row">
                     <label className="col-sm-2 col-form-label">Carb</label>
                     <div className="col-sm-10">
-                      <input type="number" name="carb" className="form-control" placeholder="Height" value={this.state.user.macro ? this.state.user.macro.carb : "Unknown"} onChange={this._handleMacroChange} />
+                      <input type="number" name="carb" className="form-control" placeholder="Height" value={this.state.user && this.state.user.macro ? this.state.user.macro.carb : "Unknown"} onChange={this._handleMacroChange} />
                     </div>
                   </div>
                   <div className="form-group row">
                     <label className="col-sm-2 col-form-label">Fat</label>
                     <div className="col-sm-10">
-                      <input type="number" name="fat" className="form-control" placeholder="Height" value={this.state.user.macro ? this.state.user.macro.fat : "Unknown"} onChange={this._handleMacroChange} />
+                      <input type="number" name="fat" className="form-control" placeholder="Height" value={this.state.user && this.state.user.macro ? this.state.user.macro.fat : "Unknown"} onChange={this._handleMacroChange} />
                     </div>
                   </div>
                 </form>
@@ -151,11 +151,11 @@ class UserDetails extends Component {
                 <form>
                   <div className="form-group">
                     <label for="exampleFormControlTextarea1" className="col-sm-2 col-form-label">Goal</label>
-                    <textarea className="form-control" name="goal" id="exampleFormControlTextarea1" rows="3" value={this.state.user.goal} onChange={this._handleTextChange}></textarea>
+                    <textarea className="form-control" name="goal" id="exampleFormControlTextarea1" rows="3" value={this.state.user && this.state.user.goal} onChange={this._handleTextChange}></textarea>
                   </div>
                   <div className="form-group">
                     <label className="col-sm-2 col-form-label">Workout habit</label>
-                    <select className="custom-select form-control" value={this.state.user.workoutHabit}>
+                    <select className="custom-select form-control" value={this.state.user && this.state.user.workoutHabit}>
                       <option value="0">None</option>
                       <option value="1">High (less than 2h/week)</option>
                       <option value="3">Medium (2 - 5h/week)</option>
@@ -164,7 +164,7 @@ class UserDetails extends Component {
                   </div>
                   <div className="form-group">
                     <label className="col-sm-2 col-form-label">Bodyfat</label>
-                    <select className="custom-select form-control" value={this.state.user.workoutHabit}>
+                    <select className="custom-select form-control" value={this.state.user && this.state.user.workoutHabit}>
                       <option value="0">None</option>
                       <option value="1">High (less than 2h/week)</option>
                       <option value="3">Medium (2 - 5h/week)</option>
@@ -208,37 +208,37 @@ class UserDetails extends Component {
                         <div className="form-group row">
                           <label className="col-sm-2 col-form-label">Name</label>
                           <div className="col-sm-10">
-                            <input type="text" name="name" className="form-control" placeholder="Name" onChange={this._handleTextChange} />
+                            <input type="text" name="name" className="form-control" placeholder="Name" value={this.state.user && this.state.user.name ? this.state.user.name : "Unknown"} onChange={this._handleTextChange} />
                           </div>
                         </div>
                         <div className="form-group row">
                           <label className="col-sm-2 col-form-label">Age</label>
                           <div className="col-sm-10">
-                            <input type="text" name="age" className="form-control" placeholder="Age" onChange={this._handleTextChange} />
+                            <input type="text" name="age" className="form-control" placeholder="Age" value={this.state.user && this.state.user.age ? this.state.user.age : "Unknown"} onChange={this._handleTextChange} />
                           </div>
                         </div>
                         <div className="form-group row">
                           <label className="col-sm-2 col-form-label">Email</label>
                           <div className="col-sm-10">
-                            <input type="text" name="email" className="form-control" placeholder="Email" onChange={this._handleTextChange} />
+                            <input type="text" name="email" className="form-control" placeholder="Email" value={this.state.user && this.state.user.email ? this.state.user.email : "Unknown"} onChange={this._handleTextChange} />
                           </div>
                         </div>
                         <div className="form-group row">
                           <label className="col-sm-2 col-form-label">Address</label>
                           <div className="col-sm-10">
-                            <input type="text" name="address" className="form-control" placeholder="Address" onChange={this._handleTextChange} />
+                            <input type="text" name="address" className="form-control" placeholder="Address" value={this.state.user && this.state.user.address ? this.state.user.address : "Unknown"} onChange={this._handleTextChange} />
                           </div>
                         </div>
                         <div className="form-group row">
                           <label className="col-sm-2 col-form-label">Phone</label>
                           <div className="col-sm-10">
-                            <input type="text" name="phone" className="form-control" placeholder="Phone" onChange={this._handleTextChange} />
+                            <input type="text" name="phone" className="form-control" placeholder="Phone" value={this.state.user && this.state.user.phone ? this.state.user.phone : "unknown"} onChange={this._handleTextChange} />
                           </div>
                         </div>
                         <div className="form-group row">
                           <label className="col-sm-2 col-form-label">Facebook</label>
                           <div className="col-sm-10">
-                            <input type="text" name="facebook" className="form-control" placeholder="Facebook" onChange={this._handleTextChange} />
+                            <input type="text" name="facebook" className="form-control" placeholder="Facebook" value={this.state.user && this.state.user.facebook ? this.state.user.facebook : "unknown"} onChange={this._handleTextChange} />
                           </div>
                         </div>
                         <div style={{ display: "flex", justifyContent: "center" }}>

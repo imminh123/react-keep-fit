@@ -15,9 +15,9 @@ export default class ViewMenu extends Component {
             <div>
                 <MainNavbar />
                 <ViewMenuDropDown meal={this.state.meal}/>
-                <ViewMenuMeal meal={this.state.meal}/>
                 <ViewMenuAdd />
-                <ViewMenuFilter />
+                <ViewMenuMeal meal={this.state.meal}/>
+                {/* <ViewMenuFilter /> */}
                 <Footer />
             </div>
         )
