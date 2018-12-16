@@ -3,6 +3,7 @@ import {Link} from 'react-router-dom';
 import avatar from '../Image/ava.jpg'
 
 export default class MainNavbar extends Component {
+
     render() {
         return (
             <div className="DashBoard">
@@ -17,10 +18,10 @@ export default class MainNavbar extends Component {
                         <div className="collapse navbar-collapse" id="navbarSupportedContent">
                             <ul className="navbar-nav ml-auto">
                                 <li className="nav-item active nav-change">
-                                    <Link className="nav-link" to="#">Home <span class="sr-only">(current)</span></Link>
+                                    <Link className="nav-link" to="/dashboard">Home <span class="sr-only">(current)</span></Link>
                                 </li>
                                 <li className="nav-item nav-change">
-                                    <Link className="nav-link" to="#">Menu</Link>
+                                    <Link className="nav-link" to="/createmenu">Menu</Link>
                                 </li>
                                 <li className="nav-item nav-change">
                                     <Link className="nav-link" to="/allfood">Foods</Link>
@@ -37,7 +38,7 @@ export default class MainNavbar extends Component {
                                         <img className="img-fluid" src={avatar} alt="" />
                                     </a>
                                     <div className="dropdown-menu" aria-labelledby="navbarDropdown">
-                                        <Link className="dropdown-item" to="">Profile</Link>
+                                        <Link className="dropdown-item" to={"/user/" + this.props.userId}>Profile</Link>
                                         <Link className="dropdown-item" to="#">Logout</Link>
                                         <div className="dropdown-divider"></div>
                                         <Link className="dropdown-item" to="#">Help</Link>

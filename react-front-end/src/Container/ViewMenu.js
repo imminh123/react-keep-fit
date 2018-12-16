@@ -14,11 +14,12 @@ export default class ViewMenu extends Component {
         meal : []
     }
 
-    componentWillMount() {
+    componentDidMount() {
         axios
         .get(`${config.rootPath}/api/food/`)
         .then(response => {
                 const food = response.data
+                debugger;
                 this.setState({
                     allFood: food
                 })
@@ -29,7 +30,7 @@ export default class ViewMenu extends Component {
 
     addFood(foodId){
         for(const food in this.state.allFood){
-            if(food._id == foodId){
+            if(food._id === foodId){
                 this.setState({meal: [this.setState.meal, food]});
                 break;
             }
@@ -43,7 +44,7 @@ export default class ViewMenu extends Component {
     render() {
         return (
             <div>
-                <MainNavbar/>
+                <MainNavbar userId={this.props.userId}/>
                 <ViewMenuDropDown meal={this.state.meal}/>
                 <ViewMenuAdd allFood={this.state.allFood} addFood={this.addFood}/>
                 <ViewMenuMeal meal={this.state.meal}/>
