@@ -6,6 +6,8 @@ import CreateMenu from './Container/CreateMenu';
 import ViewMenu from './Container/ViewMenu';
 import { BrowserRouter, Route } from 'react-router-dom';
 import User from "./Container/User";
+import FoodDetail from "./Container/FoodDetail";
+
 class App extends Component {
 
   state = {
