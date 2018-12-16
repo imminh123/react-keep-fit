@@ -19,7 +19,6 @@ export default class ViewMenu extends Component {
         .get(`${config.rootPath}/api/food/`)
         .then(response => {
                 const food = response.data
-                debugger;
                 this.setState({
                     allFood: food
                 })
@@ -28,10 +27,10 @@ export default class ViewMenu extends Component {
         .catch(err => console.error(err));
     }
 
-    addFood(foodId){
-        for(const food in this.state.allFood){
+    addFood = (foodId) => {
+        for(const food of this.state.allFood){
             if(food._id === foodId){
-                this.setState({meal: [this.setState.meal, food]});
+                this.setState({meal: [...this.state.meal, food]});
                 break;
             }
         }
