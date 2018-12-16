@@ -5,7 +5,7 @@ export default class FoodImage extends Component {
     
     render() {
         return (
-                <li className="list-inline-item" style={{ "paddingRight": "25px" }}>
+                <li className="list-inline-item" style={{ "paddingRight": "25px", "color": "gray" }}>
                         <div className="card in-line" style={{ "width": "15rem", "marginTop": "60px" }}>
                             <img className="card-img-top" src="https://images.pexels.com/photos/769289/pexels-photo-769289.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
                                 alt="Card image cap" />
