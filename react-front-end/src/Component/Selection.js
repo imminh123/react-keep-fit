@@ -9,7 +9,7 @@ export default class Selection extends Component {
     }
 
     allCookingRecepi() {
-
+        this.props.history.push("/allfood");
     }
 
     showMenu() {
