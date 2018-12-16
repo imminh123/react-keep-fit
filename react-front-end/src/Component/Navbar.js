@@ -67,13 +67,13 @@ export default class Navbar extends Component {
                     <div className="gradient" ></div>
                     <ul className="nav justify-content-end">
                         <li className="nav-item">
-                            <a className="nav-link active" href="#">Active</a>
+                            <a className="nav-link active" href="#">Home</a>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link" href="#">Link</a>
+                            <a className="nav-link" href="#">Meuu</a>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link" href="#">Link</a>
+                            <a className="nav-link" href="#">Help</a>
                         </li>
                     </ul>
 

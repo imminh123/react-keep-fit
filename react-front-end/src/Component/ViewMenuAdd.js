@@ -19,11 +19,29 @@ export default class ViewMenuAdd extends Component {
         return allFood.map(food => (
             <div key={food._id} className="border-danger">
                 <img style={{"height": "250px"}} className="w-100" src={food.link} alt="Monday" />
-                <div className="text-danger">
-                    <h3>Total: <span className='totalCalo'>{food.totalKcal}</span> kcal</h3>
+                <div style={{"fontFamily": "montserrat","fontSize": "16px"}}>
+                    <div className="row" style={{}}>
+                        <div className="col-6" style={{"borderLeft": "1px solid #f55c3d"}}>Total</div>
+                        <div className="col-6">{food.totalKcal}</div>
+                    </div>
+                    <div className="row">
+                        <div className="col-6">Protein</div>
+                        <div className="col-6">{food.protein}</div>
+                    </div>
+                    <div className="row">
+                        <div className="col-6">Carb</div>
+                        <div className="col-6">{food.carb}</div>
+                    </div>
+                    <div className="row">
+                        <div className="col-6">Fat</div>
+                        <div className="col-6">{food.fat}</div>
+                    </div>
+                    {/* <h3>Total: <span className='totalCalo'>{food.totalKcal}</span> kcal</h3>
                     <h4>Protein: <span className='protein'>{food.protein}</span>g</h4>
                     <h4>Carb: <span className='carb'>{food.carb}</span>g </h4> 
-                    <h4>Fat: <span className='fat'>{food.fat}</span>g</h4>
+                    <h4>Fat: <span className='fat'>{food.fat}</span>g</h4> */}
+
+                    
                     <button type="button" className="btn btn-info" data-foodId={food._id} onClick={() => {this._onAdd(food._id)}}>Add this item</button>
                 </div>
             </div>

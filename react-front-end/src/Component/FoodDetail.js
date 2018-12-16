@@ -6,7 +6,7 @@ import config from '../config'
 export default class AllFoolHeader extends Component {
 
     state={
-        food: null
+        food: {}
     }
 
     componentDidMount = ()=> {
@@ -14,7 +14,7 @@ export default class AllFoolHeader extends Component {
             url: `${config.rootPath}/api/food/${this.props.match.params.foodId}`,
             method: "GET",
         }).then(response => {
-            console.log(response.data)
+            console.log("data ne")
             this.setState({
                 food: response.data
             });
@@ -28,17 +28,17 @@ export default class AllFoolHeader extends Component {
 
     render() {
         console.log('Food State');
-        console.log(this.food);
+        console.log(this.state.food);
         return (
             <div className="foodDetail container">  
                 <div className="foodContent">
                     <div>
-                        <h3 className="title1">Food Name</h3>
-                        <img className="img-fluid" src="" alt="food" />
+                        <h3 className="title1">{this.state.food.name}</h3>
+                        <img className="img-fluid" src={this.state.food.link} alt="food" />
                     </div>
                     
                     <div className="step">
-                        <h3 className="title2">How to cook <span>Some Food</span></h3>
+                        <h3 className="title2">How to cook <span>{this.state.food.name}</span></h3>
                         <ul>
                             <li><span>Step 1  : </span>Go to your nearest supermarket</li>
                             <li><span>Step 2 : </span>Select a radom freeze food</li>
