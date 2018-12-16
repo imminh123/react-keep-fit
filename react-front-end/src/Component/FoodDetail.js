@@ -5,24 +5,36 @@ import config from '../config'
 
 export default class AllFoolHeader extends Component {
 
+    state={
+        food: null
+    }
+
     componentDidMount = ()=> {
         axios({
             url: `${config.rootPath}/api/food/${this.props.match.params.foodId}`,
             method: "GET",
         }).then(response => {
-            console.log(response)
+            console.log(response.data)
+            this.setState({
+                food: response.data
+            });
+            debugger
+           
+          
         }).catch(error => {
             console.log(error);
         });
     }
 
     render() {
+        console.log('Food State');
+        console.log(this.food);
         return (
             <div className="foodDetail container">  
                 <div className="foodContent">
                     <div>
                         <h3 className="title1">Food Name</h3>
-                        <img className="img-fluid" src="https://images.pexels.com/photos/769289/pexels-photo-769289.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="food" />
+                        <img className="img-fluid" src="" alt="food" />
                     </div>
                     
                     <div className="step">
@@ -40,7 +52,7 @@ export default class AllFoolHeader extends Component {
                 <div className="progressBar">
                     <div class="progress">
                         <div class="progress-bar" role="progressbar" aria-valuenow="70"
-                        aria-valuemin="0" aria-valuemax="100" style={{"width": "70%"}}>
+                        aria-valuemin="0" aria-valuemax="100" style={{"width": "50%"}}>
                             <span class="sr-only">70% Complete</span>
                         </div>
                     </div>

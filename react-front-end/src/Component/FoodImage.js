@@ -7,8 +7,8 @@ export default class FoodImage extends Component {
         return (
                 <li className="list-inline-item" style={{ "paddingRight": "25px" }}>
                         <div className="card in-line" style={{ "width": "15rem", "marginTop": "60px" }}>
-                            <img className="card-img-top" src="https://images.pexels.com/photos/769289/pexels-photo-769289.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
-                                alt="Card image cap" />
+                            <img className="card-img-top" src={this.props.food.link}
+                                alt="Card cap" />
                             <div className="card-body">
                                 <h5 className="card-title" style={{ "border-rounded": "1px solid #f34f2e" }}>{this.props.food.name}</h5>
                                 <div style={{ "textAlign": "right" }}>
