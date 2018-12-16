@@ -29,6 +29,7 @@ class App extends Component {
             <Route path="/user/:userId" component={(props) => <User {...props}/>}/>
             <Route path="/createmenu" component={ViewMenu}/>
             <Route path="/allfood" component={AllFood}/>
+            <Route path="/food/:foodId" component={FoodDetail}/>
           </div>
         </BrowserRouter>
         {/* {this.state.username ? <Dashboard /> : <Login _changeState={this._changeState} />} */}

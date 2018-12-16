@@ -7,7 +7,7 @@ export default class AllFoolHeader extends Component {
 
     componentDidMount = ()=> {
         axios({
-            url: `${config.rootPath}/api/food/${this.props.match.params.imageId}`,
+            url: `${config.rootPath}/api/food/${this.props.match.params.foodId}`,
             method: "GET",
         }).then(response => {
             console.log(response)

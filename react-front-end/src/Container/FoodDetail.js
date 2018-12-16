@@ -1,16 +1,19 @@
 import React, { Component } from 'react'
+import { withRouter } from "react-router";
 import MainNavbar from '../Component/MainNavbar'
 import Footer from '../Component/Footer'
 import FoodDetail from "../Component/FoodDetail";
 
-export default class Login extends Component {
+class FoodDetailContainer extends Component {
     render() {
         return (
             <div>
                 <MainNavbar />
-                <FoodDetail/>
+                <FoodDetail {...this.props}/>
                 <Footer />
             </div>
         )
     }
 }
+
+export default withRouter(FoodDetailContainer);

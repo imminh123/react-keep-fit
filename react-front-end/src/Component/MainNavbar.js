@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import {Link} from 'react-router-dom';
 import avatar from '../Image/ava.jpg'
 
 export default class MainNavbar extends Component {
@@ -16,19 +17,19 @@ export default class MainNavbar extends Component {
                         <div className="collapse navbar-collapse" id="navbarSupportedContent">
                             <ul className="navbar-nav ml-auto">
                                 <li className="nav-item active nav-change">
-                                    <a className="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                                    <Link className="nav-link" to="#">Home <span class="sr-only">(current)</span></Link>
                                 </li>
                                 <li className="nav-item nav-change">
-                                    <a className="nav-link" href="#">Menu</a>
+                                    <Link className="nav-link" to="#">Menu</Link>
                                 </li>
                                 <li className="nav-item nav-change">
-                                    <a className="nav-link" href="allfood">Foods</a>
+                                    <Link className="nav-link" to="/allfood">Foods</Link>
                                 </li>
                                 <li className="nav-item nav-change">
-                                    <a className="nav-link" href="#">Contact</a>
+                                    <Link className="nav-link" to="#">Contact</Link>
                                 </li>
                                 <li className="nav-item nav-change">
-                                    <a className="nav-link" href="#">About</a>
+                                    <Link className="nav-link" to="#">About</Link>
                                 </li>
                                 <li className="nav-item dropdown avatar">
                                     <a className="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
@@ -36,10 +37,10 @@ export default class MainNavbar extends Component {
                                         <img className="img-fluid" src={avatar} alt="" />
                                     </a>
                                     <div className="dropdown-menu" aria-labelledby="navbarDropdown">
-                                        <a className="dropdown-item" href="">Profile</a>
-                                        <a className="dropdown-item" href="#">Logout</a>
+                                        <Link className="dropdown-item" to="">Profile</Link>
+                                        <Link className="dropdown-item" to="#">Logout</Link>
                                         <div className="dropdown-divider"></div>
-                                        <a className="dropdown-item" href="#">Help</a>
+                                        <Link className="dropdown-item" to="#">Help</Link>
                                     </div>
                                 </li>
                             </ul>
