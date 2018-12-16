@@ -10,7 +10,7 @@ export default class Login extends Component {
     render() {
         return (
             <div>
-                <MainNavbar />
+                <MainNavbar userId={this.props.userId}/>
                 <AllFoolHeader />
                 <AllFoodContent />
                 <Footer />

@@ -29,7 +29,7 @@ class User extends Component {
     render() {
         return (
             <div className="User">
-                <MainNavbar/>
+                <MainNavbar userId={this.props.userId}/>
                 <div className="row">
                     <div className="col-4 rounded">
                         <UserInfo  user={this.state.user}/>

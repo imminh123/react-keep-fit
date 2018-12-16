@@ -8,7 +8,7 @@ class CreateMenu extends Component {
     render() {
         return (
             <div>
-                <MainNavbar />
+                <MainNavbar userId={this.props.userId} />
                 <CreateMenuBody />
                 <Footer />
             </div>

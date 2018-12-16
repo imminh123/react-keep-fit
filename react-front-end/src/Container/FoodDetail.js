@@ -8,7 +8,7 @@ class FoodDetailContainer extends Component {
     render() {
         return (
             <div>
-                <MainNavbar />
+                <MainNavbar  userId={this.props.userId}/>
                 <FoodDetail {...this.props}/>
                 <Footer />
             </div>

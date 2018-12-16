@@ -7,9 +7,10 @@ import Selection from '../Component/Selection'
 
 class Dashboard extends Component {
     render() {
+        console.log(this.props.userId)
         return (
             <div>
-                <MainNavbar />
+                <MainNavbar  userId={this.props.userId}/>
                 <Quote />
                 <Selection history={this.props.history}/>
                 <Footer />

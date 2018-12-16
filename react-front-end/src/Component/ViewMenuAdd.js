@@ -1,4 +1,5 @@
-import React, { Component } from 'react'
+import React, { Component } from 'react';
+import Slider from "react-slick";
 
 export default class ViewMenuAdd extends Component {
     constructor(props) {
@@ -6,9 +7,8 @@ export default class ViewMenuAdd extends Component {
         this.state = {
             allFood: null
         }
-        console.log("Constructor")
     }
-    
+
     componentWillReceiveProps(nextProps) {
         this.setState({
             allFood: nextProps.allFood
@@ -17,61 +17,41 @@ export default class ViewMenuAdd extends Component {
 
     foodForChoosing(allFood) {
         return allFood.map(food => (
-            <div className="carousel-item" key={food._id}>
-                <img className="d-block w-100" src="https://images.pexels.com/photos/1539683/pexels-photo-1539683.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"alt="Monday" />
-                <div className="carousel-caption d-none d-md-block text-danger">
-                    <h1>Total: <span className='totalCalo'>{food.kcal}</span> kcal</h1>
-                    <h2>Protein: <span className='protein'>{food.protein}</span>g || Carb: <span className='carb'>{food.carb}</span>g || Fat: <span className='fat'>{food.fat}</span>g</h2>
+            <div key={food._id} className="border-danger">
+                <img style={{"height": "250px"}} className="w-100" src={food.link} alt="Monday" />
+                <div className="text-danger">
+                    <h3>Total: <span className='totalCalo'>{food.totalKcal}</span> kcal</h3>
+                    <h4>Protein: <span className='protein'>{food.protein}</span>g</h4>
+                    <h4>Carb: <span className='carb'>{food.carb}</span>g </h4> 
+                    <h4>Fat: <span className='fat'>{food.fat}</span>g</h4>
                     <button type="button" className="btn btn-info" data-foodId={food._id} onClick={() => {this._onAdd(food._id)}}>Add this item</button>
                 </div>
             </div>
+            // <div>
+            //     <h1>LOL</h1>
+            // </div>
         ));
     }
 
-    _onAdd(foodId){
+    _onAdd(foodId) {
         this.props.addFood(foodId);
-    }   
+    }
 
     render() {
-        return (
-            <div class="container">
-                <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-                    <ol class="carousel-indicators">
-                        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-                        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-                        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-                    </ol>
-                    <div class="carousel-inner" style={{ "height": "500px", "display": "flex", "justifyContent": "center" }}>
-                        {this.state.allFood ? this.foodForChoosing(this.state.allFood) : ""}
-                        <div className="carousel-item active">
-                            <img className="d-block w-100" src="https://images.pexels.com/photos/1539683/pexels-photo-1539683.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="Monday" />
-                            <div className="carousel-caption d-md-block text-danger">
-                                <h1>Total: <span className='totalCalo'>0</span> kcal</h1>
-                                <h2>Protein: <span className='protein'>0</span>g || Carb: <span className='carb'>0</span>g || Fat: <span className='fat'>0</span>g</h2>
-                                <button type="button" className="btn btn-info" data-foodId="#">Add this item</button>
-                            </div>
-                        </div>
-                        <div className="carousel-item">
-                            <img className="d-block w-100" src="https://images.pexels.com/photos/1539683/pexels-photo-1539683.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="Monday" />
-                            <div className="carousel-caption d-none d-md-block text-danger">
-                                <h1>Total: <span className='totalCalo'>0</span> kcal</h1>
-                                <h2>Protein: <span className='protein'>0</span>g || Carb: <span className='carb'>0</span>g || Fat: <span className='fat'>0</span>g</h2>
-                                <button type="button" className="btn btn-info" data-foodId="#">Add this item</button>
-                            </div>
-                        </div>
-                    </div>
-                    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="sr-only">Previous</span>
-                    </a>
-                    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="sr-only">Next</span>
-                    </a>
-                </div>
-                <style>
+        console.log(this.state.allFood)
+        const settings = {
+            dots: true,
+            infinite: true,
+            speed: 500,
+            slidesToShow: 3,
+            slidesToScroll: 3
+        };
 
-                </style>
+        return (
+            <div style={{textAlign: "center", padding: "0 25px"}}>
+                <Slider {...settings}>
+                    {this.state.allFood ? this.foodForChoosing(this.state.allFood) : ""}
+                </Slider>
             </div>
         )
     }
