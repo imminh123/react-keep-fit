@@ -6,7 +6,7 @@ import CreateMenu from './Container/CreateMenu';
 import ViewMenu from './Container/ViewMenu';
 import axios from './axious';
 import { BrowserRouter, Route } from 'react-router-dom';
-
+import User from "./Container/User";
 class App extends Component {
 
   state = {
@@ -19,7 +19,6 @@ class App extends Component {
 
   render() {
     return (
-
       <div className="App">
       {/* <BrowserRouter>
       <AllFood />
@@ -32,15 +31,10 @@ class App extends Component {
 
 
         {/* <BrowserRouter>
-          <div className="App">
-            <Route exact path="/" render={(props) => {
-              return <Login {...props} username={this.state.username} changeState={this._changeState} />
-            }} />
-            <Route path="/images/:imageId" render={(props) => {
-              return <DetailScreen {...props} username={this.state.username} />
-            }} /> 
-          </div>
+          <Route path="/api/user/:userId" component={User}/>
         </BrowserRouter> */}
+          <ViewMenu/>
+          {/* <CreateMenu/> */}
       </div>
     );
   }
