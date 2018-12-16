@@ -1,0 +1,74 @@
+.foodContent {
+    padding-top: 20px;
+    font-family: 'montserrat';
+}
+
+.foodDetail .title1 {
+    font-family: 'montserrat';
+    font-weight: bold;
+    color: #f84e2c;
+    font-size: 30px;
+    padding-bottom: 10px;
+}
+
+.foodDetail .title2 {
+    font-family: 'montserrat';
+    font-weight: bold;
+    color: #424242;
+    font-size: 22px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid white;
+}
+
+.foodDetail .title2 span {
+    font-size: 30px;
+    color: white;
+    padding-left: 10px;
+}
+
+.foodDetail .foodContent img {
+    max-width: 500px;
+    margin-right: 160px;
+    border-radius: 10px;
+}
+
+.foodDetail .foodContent {
+    display: flex;
+    
+}
+
+.foodDetail .progressBar {
+    margin-top: 8vh;
+    max-width: 500px;
+    
+}
+
+.foodDetail .progressBar .progress {
+    margin-bottom: 22px;
+}
+
+.foodContent .step {
+    padding-top: 6px;
+    background-color: #ff6749;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 15px;
+}
+
+.foodContent .step ul{
+    padding-top: 10px;
+    list-style-type: none;
+    padding-left: 15px;
+    line-height: 2rem;
+    font-size: 15px;
+    color: white;
+}
+
+.foodContent .step ul span {
+    font-size: 18px;
+    padding-right: 5px;
+}
+
+.foodContent .step ul li{
+    padding-right: 10px;
+}
