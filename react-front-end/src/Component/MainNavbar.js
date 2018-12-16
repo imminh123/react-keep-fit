@@ -7,7 +7,7 @@ export default class MainNavbar extends Component {
             <div className="DashBoard">
                 <div className="container-fluid">
                     <nav className="navbar navbar-expand-lg navbar-light">
-                        <a className="navbar-brand" href="#">Keep Fit.</a>
+                        <a className="navbar-brand" href="/Dashboard">Keep Fit.</a>
                         <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
                             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                             <span className="navbar-toggler-icon"></span>
@@ -22,7 +22,7 @@ export default class MainNavbar extends Component {
                                     <a className="nav-link" href="#">Menu</a>
                                 </li>
                                 <li className="nav-item nav-change">
-                                    <a className="nav-link" href="#">Foods</a>
+                                    <a className="nav-link" href="allfood">Foods</a>
                                 </li>
                                 <li className="nav-item nav-change">
                                     <a className="nav-link" href="#">Contact</a>
@@ -36,16 +36,17 @@ export default class MainNavbar extends Component {
                                         <img className="img-fluid" src={avatar} alt="" />
                                     </a>
                                     <div className="dropdown-menu" aria-labelledby="navbarDropdown">
-                                        <a className="dropdown-item" href="#">Action</a>
-                                        <a className="dropdown-item" href="#">Another action</a>
+                                        <a className="dropdown-item" href="">Profile</a>
+                                        <a className="dropdown-item" href="#">Logout</a>
                                         <div className="dropdown-divider"></div>
-                                        <a className="dropdown-item" href="#">Something else here</a>
+                                        <a className="dropdown-item" href="#">Help</a>
                                     </div>
                                 </li>
                             </ul>
 
                         </div>
                     </nav>
+                    <hr></hr>
                 </div>
             </div>
         )

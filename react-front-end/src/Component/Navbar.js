@@ -36,7 +36,8 @@ export default class Navbar extends Component {
             }
         }).then(response => {
             this.props._changeState("username", response.data.user.name);
-            console.log(response.data);
+            this.props._changeState("userId", response.data.user._id);
+            this.props.history.push("/dashboard");
         }).catch(error => {
             console.log(error);
         });

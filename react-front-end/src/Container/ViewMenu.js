@@ -50,7 +50,6 @@ export default class ViewMenu extends Component {
                 <div style={{"display": "flex", "justifyContent": "center"}}>
                     <button class="btn btn-lg btn-success" onClick={this._confirm}>Confirm</button>
                 </div>
-                
                 <Footer />
             </div>
         )

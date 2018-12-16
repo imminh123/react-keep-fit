@@ -20,8 +20,8 @@ export default class CreateMenuBody extends Component {
                                 <h2>Protein: <span className='protein'>0</span>g Carb: <span className='carb'>0</span>g Fat: <span className='fat'>0</span>g</h2>
                                 <h5>Monday</h5>
                                 <p>Hello World</p>
-                                <button type="button" className="btn btn-info">View Menu</button>
-                                <button type="button" className="btn btn-info">Change Menu</button>
+                                <a style={{ "text-decoration": "none" , "padding-left": "15px", "padding-right": "15px"}} className="button" href="#">  View Menu  </a>
+                                <a style={{ "text-decoration": "none" }} className="button" href="#">Change Menu</a>
                             </div>
 
                         </div>
@@ -29,10 +29,12 @@ export default class CreateMenuBody extends Component {
                             <img className="d-block w-100" src="https://images.pexels.com/photos/1539683/pexels-photo-1539683.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
                                 alt="Tuesday" />
                             <div className="carousel-caption d-none d-md-block">
+                                <h1>Total: <span className='totalCalo'>0</span> kcal</h1>
+                                <h2>Protein: <span className='protein'>0</span>g Carb: <span className='carb'>0</span>g Fat: <span className='fat'>0</span>g</h2>
                                 <h5>Tuesday</h5>
                                 <p>Hello World</p>
-                                <button type="button" className="btn btn-info">View Menu</button>
-                                <button type="button" className="btn btn-info">Change Menu</button>
+                                <a style={{ "text-decoration": "none" , "padding-left": "15px", "padding-right": "15px"}} className="button" href="#">  View Menu  </a>
+                                <a style={{ "text-decoration": "none" }} className="button" href="#">Change Menu</a>
                             </div>
 
                         </div>
@@ -40,7 +42,61 @@ export default class CreateMenuBody extends Component {
                             <img className="d-block w-100" src="https://images.pexels.com/photos/1539683/pexels-photo-1539683.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
                                 alt="Wednesday" />
                             <div className="carousel-caption d-none d-md-block">
+                                <h1>Total: <span className='totalCalo'>0</span> kcal</h1>
+                                <h2>Protein: <span className='protein'>0</span>g Carb: <span className='carb'>0</span>g Fat: <span className='fat'>0</span>g</h2>
                                 <h5>Wednesday</h5>
+                                <p>Hello World</p>
+                                <a style={{ "text-decoration": "none" , "padding-left": "15px", "padding-right": "15px"}} className="button" href="#">  View Menu  </a>
+                                <a style={{ "text-decoration": "none" }} className="button" href="#">Change Menu</a>
+                            </div>
+
+                        </div>
+                        <div className="carousel-item">
+                            <img className="d-block w-100" src="https://images.pexels.com/photos/1539683/pexels-photo-1539683.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+                                alt="Wednesday" />
+                            <div className="carousel-caption d-none d-md-block">
+                                <h1>Total: <span className='totalCalo'>0</span> kcal</h1>
+                                <h2>Protein: <span className='protein'>0</span>g Carb: <span className='carb'>0</span>g Fat: <span className='fat'>0</span>g</h2>
+                                <h5>Thursday</h5>
+                                <p>Hello World</p>
+                                <a style={{ "text-decoration": "none" , "padding-left": "15px", "padding-right": "15px"}} className="button" href="#">  View Menu  </a>
+                                <a style={{ "text-decoration": "none" }} className="button" href="#">Change Menu</a>
+                            </div>
+
+                        </div>
+                        <div className="carousel-item">
+                            <img className="d-block w-100" src="https://images.pexels.com/photos/1539683/pexels-photo-1539683.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+                                alt="Wednesday" />
+                            <div className="carousel-caption d-none d-md-block">
+                                <h1>Total: <span className='totalCalo'>0</span> kcal</h1>
+                                <h2>Protein: <span className='protein'>0</span>g Carb: <span className='carb'>0</span>g Fat: <span className='fat'>0</span>g</h2>
+                                <h5>Friday</h5>
+                                <p>Hello World</p>
+                                <a style={{ "text-decoration": "none" , "padding-left": "15px", "padding-right": "15px"}} className="button" href="#">  View Menu  </a>
+                                <a style={{ "text-decoration": "none" }} className="button" href="#">Change Menu</a>
+                            </div>
+
+                        </div>
+                        <div className="carousel-item">
+                            <img className="d-block w-100" src="https://images.pexels.com/photos/1539683/pexels-photo-1539683.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+                                alt="Wednesday" />
+                            <div className="carousel-caption d-none d-md-block">
+                                <h1>Total: <span className='totalCalo'>0</span> kcal</h1>
+                                <h2>Protein: <span className='protein'>0</span>g Carb: <span className='carb'>0</span>g Fat: <span className='fat'>0</span>g</h2>
+                                <h5>Saturday</h5>
+                                <p>Hello World</p>
+                                <a style={{ "text-decoration": "none" , "padding-left": "15px", "padding-right": "15px"}} className="button" href="#">  View Menu  </a>
+                                <a style={{ "text-decoration": "none" }} className="button" href="#">Change Menu</a>
+                            </div>
+
+                        </div>
+                        <div className="carousel-item">
+                            <img className="d-block w-100" src="https://images.pexels.com/photos/1539683/pexels-photo-1539683.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+                                alt="Wednesday" />
+                            <div className="carousel-caption d-none d-md-block">
+                                <h1>Total: <span className='totalCalo'>0</span> kcal</h1>
+                                <h2>Protein: <span className='protein'>0</span>g Carb: <span className='carb'>0</span>g Fat: <span className='fat'>0</span>g</h2>
+                                <h5>Sunday</h5>
                                 <p>Hello World</p>
                                 <a style={{ "text-decoration": "none" , "padding-left": "15px", "padding-right": "15px"}} className="button" href="#">  View Menu  </a>
                                 <a style={{ "text-decoration": "none" }} className="button" href="#">Change Menu</a>

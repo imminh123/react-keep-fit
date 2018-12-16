@@ -9,7 +9,8 @@ import User from "./Container/User";
 class App extends Component {
 
   state = {
-    username : null
+    username : null,
+    userId: null
   }
 
   _changeState = (property, content) => {
@@ -21,13 +22,14 @@ class App extends Component {
       <div className="App">
         <BrowserRouter>
           <div>        
-            {this.state.username} ? <Route path="/dashboard" component={Dashboard}/> :<Route path="/login" component={(props) => <Login {...props} username={this.state.username} _changeState={this._changeState} />}/>
-            <Route path="/user/:userId" component={User}/>
-            <Route path="/menu" component={ViewMenu}/>
-            <Route path="/createmenu" component={CreateMenu}/>
+            <Route path="/dashboard" component={(props) => <Dashboard {...props}/>}/>
+            <Route path="/login" component={(props) => <Login {...props} username={this.state.username} _changeState={this._changeState} />}/>
+            <Route path="/user/:userId" component={(props) => <User {...props}/>}/>
+            <Route path="/createmenu" component={ViewMenu}/>
             <Route path="/allfood" component={AllFood}/>
           </div>
         </BrowserRouter>
+        {/* {this.state.username ? <Dashboard /> : <Login _changeState={this._changeState} />} */}
       </div>
     );
   }
