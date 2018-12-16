@@ -35,7 +35,7 @@ export default class Navbar extends Component {
                 password: this.state.password
             }
         }).then(response => {
-            this.props.changeState("username", response.data.user.name);
+            this.props._changeState("username", response.data.user.name);
             console.log(response.data);
         }).catch(error => {
             console.log(error);

@@ -25,10 +25,7 @@ class User extends Component {
             )
             .catch(err => console.error(err));
     }
-
-
-
-
+    
     render() {
         return (
             <div className="User">

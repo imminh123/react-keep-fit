@@ -7,7 +7,7 @@ export default class Login extends Component {
     render() {
         return (
             <div>
-                <Navbar changeState={this.props.changeState} />
+                <Navbar _changeState={this.props._changeState} />
                 <BodyHome />
                 <Footer />
             </div>
