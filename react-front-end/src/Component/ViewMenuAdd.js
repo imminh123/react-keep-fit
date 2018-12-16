@@ -20,11 +20,12 @@ export default class ViewMenuAdd extends Component {
             <div key={food._id} className="border-danger">
                 <img style={{"height": "250px"}} className="w-100" src={food.link} alt="Monday" />
                 <div className="text-danger">
+                    <h3>Name: <span className='totalCalo'>{food.name}</span></h3>
                     <h3>Total: <span className='totalCalo'>{food.totalKcal}</span> kcal</h3>
                     <h4>Protein: <span className='protein'>{food.protein}</span>g</h4>
                     <h4>Carb: <span className='carb'>{food.carb}</span>g </h4> 
                     <h4>Fat: <span className='fat'>{food.fat}</span>g</h4>
-                    <button type="button" className="btn btn-info" data-foodId={food._id} onClick={() => {this._onAdd(food._id)}}>Add this item</button>
+                    <button type="button" className="btn btn-info" onClick={() => {this._onAdd(food._id)}}>Add this item</button>
                 </div>
             </div>
             // <div>
